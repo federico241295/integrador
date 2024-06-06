@@ -4,7 +4,7 @@
 
 .main-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     @media (max-width: 768px) {
         & { /* .main-header */
@@ -32,12 +32,14 @@
 /* -------------------------------------------------------- */
 
 .nav-bar {
-    background-color: mediumaquamarine;
+    background-color: white;
 
     &__nav-list { /* .nav-bar__nav-list */
+        border-top: 1px solid rgb(53, 52, 52);
+        border-bottom: 1px solid rgb(53, 52, 52);
         display: flex;
         list-style-type: none;
-        justify-content: center;
+        justify-content: space-around;
 
         @media (max-width: 768px) {
             & {
@@ -54,10 +56,16 @@
 
     &__nav-link {
         display: inline-block;
-        background-color: purple;
+        background-color: white;
+        color: rgb(53, 52, 52);
         padding: 1rem 2rem;
         text-decoration: none;
+
+        &:hover {
+            color: red;
+        }
     }
+
 
     @media (max-width: 768px) {
         & { /* .nav-bar */
@@ -72,7 +80,7 @@
 /* -------------------------------------------------------- */
 
 .search-bar {
-    background-color: olivedrab;
+    background-color: rgba(235, 163, 54, 0.774);
     display: flex; 
     justify-content: space-around;
 
@@ -84,19 +92,19 @@
     &__form-container {
        padding: 1rem;
 
-       background-color: gold;
+       background-color: white;
        display: flex;
-       flex-basis: 100%;
+       flex-basis: 70%;
        justify-content: center;
     }
 
     &__form-label {
-        background-color: greenyellow;
+        /* background-color: white; */
     }
 
     &__form-search {
         background-color: deeppink;
-        width: 70%;
+        width: 50%;
     }
 
     &__form-submit {
