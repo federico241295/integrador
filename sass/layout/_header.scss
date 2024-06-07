@@ -80,7 +80,7 @@
 /* -------------------------------------------------------- */
 
 .search-bar {
-    background-color: rgba(235, 163, 54, 0.774);
+    background-color:white;
     display: flex; 
     justify-content: space-around;
 
@@ -91,7 +91,6 @@
 
     &__form-container {
        padding: 1rem;
-
        background-color: white;
        display: flex;
        flex-basis: 70%;
@@ -103,13 +102,25 @@
     }
 
     &__form-search {
-        background-color: deeppink;
+        background-color: white;
+        color: red;
         width: 50%;
+        text-align: left;
+        border: 1px solid rgb(53, 52, 52);
+        padding: 5px 5px;
     }
 
     &__form-submit {
-        background-color: darkslategray;
+        background-color: rgb(53, 52, 52);
         color: white;
+        border-radius: 5px;
+        margin-left: 0.5rem;
+        padding: 0.2rem;
+
+        &:hover {
+            background-color: red;
+            border-color: red;
+        }
     }
     
     &__carrito-container {
