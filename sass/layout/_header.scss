@@ -83,9 +83,10 @@
     background-color:white;
     display: flex; 
     justify-content: space-around;
+    
 
     &__logo-container { /* .search-bar__logo-container */
-        width: 18.75rem;
+        width: 8rem;
         height: 3.75rem;
     }
 
@@ -93,8 +94,10 @@
        padding: 1rem;
        background-color: white;
        display: flex;
-       flex-basis: 70%;
+       flex-basis: 40%;
        justify-content: center;
+       position: relative;
+       left: 3%;
     }
 
     &__form-label {
@@ -104,11 +107,22 @@
     &__form-search {
         background-color: white;
         color: red;
-        width: 50%;
+        width: 90%;
         text-align: left;
         border: 1px solid rgb(53, 52, 52);
+        border-radius: 5px;
         padding: 5px 5px;
     }
+
+
+     &__logo-input {
+        display: flex;
+        width: 50%;
+        height: 2rem;
+        background-color: red;
+        color: blue;
+     }
+
 
     &__form-submit {
         background-color: rgb(53, 52, 52);
@@ -125,7 +139,12 @@
     
     &__carrito-container {
         flex: 0 0 3rem; /* shorthand (grow shrihk basis */
-        background-color: goldenrod;
+        background-color: white;
+        color: #F42534;
+        text-align: center;
+        line-height: 4rem;
+        position: relative;
+        right: 80px;
     }
 }
 
