@@ -1,21 +1,86 @@
 .card {
-    width: 220px;
+    width: 300px;
     max-width: 300px;
-    height: 400px;
+    height: 350px;
     background-color: orange;
     overflow: hidden;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
 
     transition: all .2s; /* ! No puede ser all */
 
     &:hover,
     &:focus {
-        transform: scale(1.03) skew(0) rotate(2deg);
-        transform-origin: bottom;
+        /* transform: scale(1.03) skew(0); */
+        /* transform-origin: bottom; */
         box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
     }
+
+
+    /* -------------------------------------------------------- */
+    /* CARD-DESCRIPTION */
+    /* -------------------------------------------------------- */
+
+    &__heading {
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: rgb(156, 155, 155);
+        font-weight: 100;
+        font-size: 1.3rem;
+/*         background-color: blueviolet; */
+    }
+
+
+    &__description-h3 {
+        text-align: left;
+        color: rgb(0, 0, 0);
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+
+    &__description-h4 {
+        text-align: left;
+        color: rgb(57, 182, 46);
+        margin-left: 0.5rem;
+        font-weight: 500;
+    }
+
+    &__description-h4-2 {
+        text-align: left;
+        color: rgb(57, 182, 46);
+        margin-left: 0.5rem;
+        font-weight: 900;
+    }
+
+
+
+
+
+
+
+
+/*     &__description-button {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 0px;
+        color: rgb(255, 255, 255);
+        background-color: #F42534;
+        margin-right: 0.5rem;
+        padding: 0.6rem 0rem;
+        border: #F42534;
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+ */
+
+
+    /* -------------------------------------------------------- */
+    /*  */
+    /* -------------------------------------------------------- */
+
+
 
     &__image {
         width: 100%;
@@ -25,40 +90,45 @@
 
     &:hover &__image, 
     &:focus &__image {
-        transform: scale(1.4) rotate(5deg);
+        /* transform: scale(1.4) rotate(5deg); */
         transform-origin: center;
     }
 
     &:nth-child(5n + 1) {
-        background-image: linear-gradient(to top, #aaafad 0%, #60efff 100%);
+        background-color: white;
+        border: 1px solid grey;
     }
     
     &:nth-child(5n + 2) {
-        background-image: linear-gradient(to top, #696eff 0%, #f8accf 100%);
+        background-color: white;
+        border: 1px solid grey;
     }
     
     &:nth-child(5n + 3) {
-        background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 100%);
+        background-color: white;
+        border: 1px solid grey;
     }
 
     &:nth-child(5n + 4) {
-        background-image: linear-gradient(to top, #ff930f 0%, #fff95b 100%);
+        background-color: white;
+        border: 1px solid grey;
     }
 
     &:nth-child(5n + 5) {
-        background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 100%);
+        background-color: white;
+        border: 1px solid grey;
     }
 
     &__image-container {
-        height: 200px;
+        height: 230px;
         background-color: blue;
         overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* Estado inicial */
+        /* clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); */ /* Estado inicial */
     }
 
     &:hover &__image-container,
     &:focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* Estado final */
+        /* clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); */ /* Estado final */
     }
 
     /* ----------------------------------------- */
@@ -88,3 +158,4 @@
     }
 
 }
+
