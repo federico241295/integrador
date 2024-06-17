@@ -54,7 +54,9 @@
     }
 
 
-
+    &__img-grande {
+        width: 80%;
+    }
 
 
 
@@ -85,7 +87,6 @@
     &__image {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     &:hover &__image, 
@@ -157,5 +158,6 @@
 
     }
 
+    
 }
 

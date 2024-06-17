@@ -1,4 +1,14 @@
 .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     background-color: red;
     color: orange;
+    list-style: none;
+
+    &__container {
+        width: 20%;
+        text-align: center;
+       /*  background-color: blue; */
+    }
 }
