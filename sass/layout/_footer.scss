@@ -2,13 +2,48 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background-color: red;
+    background-color: #FFFFFF;
     color: orange;
     list-style: none;
+    border-top:1px solid rgb(53, 52, 52); ;
 
     &__container {
         width: 20%;
         text-align: center;
+        margin: 0.8rem 0rem;
        /*  background-color: blue; */
+    }
+
+    &__h4 {
+        color: #6A6B6F;
+        font-size: 1rem;
+        font-weight: 900;
+        /* border-bottom: 2px solid rgb(58, 57, 57); */
+        padding-bottom: 0.2rem;
+        display: inline-block;
+    }
+
+    &__ul {
+        color: rgb(58, 57, 57);
+        font-size: 1rem;
+        font-weight: 300;
+        padding-bottom: 0.5rem;
+    }
+
+    &__social-link a{
+        display: inline-block;
+        min-height: 40px;
+        width: 40px;
+        background-color: #6d6b6b;
+        color: #FFFFFF;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: #F42534;
+        }
     }
 }

@@ -139,12 +139,17 @@
     
     &__carrito-container {
         flex: 0 0 3rem; /* shorthand (grow shrihk basis */
-        background-color: white;
-        color: #F42534;
-        text-align: center;
-        line-height: 4rem;
         position: relative;
         right: 80px;
+        display: inline-block;
+        min-height: 30px;
+        width: 30px;
+        background-color: #F42534;
+        color: #ffffff;
+        margin: 7px 10px 10px 5px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
     }
 }
 
