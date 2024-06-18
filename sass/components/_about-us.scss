@@ -1,0 +1,23 @@
+.about-us {
+    display: flex;
+    justify-content: center;
+    background-color: #F1EFEF;
+
+    &__container {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        width: 70%;
+    }
+
+    &__h2 {
+        text-align: center;
+        color: #F42534;
+        font-size: 2rem;
+    }
+    &__p {
+        text-align: center;
+        color: #55565A;
+        font-size: 1.4rem;
+    }
+
+}
