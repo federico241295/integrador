@@ -1,0 +1,25 @@
+.container-gral{
+    display: flex;
+}
+
+.form {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(137, 137, 139);
+
+
+    &__input {
+  /*       display: block; */
+    }
+
+
+}
+
+
+
+
+.opinions {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(95, 95, 180);
+}
