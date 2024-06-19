@@ -49,19 +49,19 @@
     </header> <!-- main-header -->
 
     <main>
-      <h1 class="cabecera">CONTACTANOS!</h1>
+      <h1 class="cabecera">Contactanos</h1>
         <div class="container-gral">
           <div class="form">
             <form class="form__form">
-              <fieldset class="form__fieldset">
+              <!-- <fieldset class="form__fieldset"> -->
                 <legend class="form__legend">Escribinos</legend>
 
                 <div class="form__container-input">
                   <label for="lbl-nombre" class="form__label">Nombre: </label>
-                  <input type="text" id="lbl-nombre" name="nombre" placeholder="Juan" class="form__input">
-                  
+                  <input type="text" id="lbl-nombre" name="nombre" placeholder="Pedro" class="form__input">
+                
                   <label for="lbl-apellido" class="form__label">Apellido: </label>
-                  <input type="text" id="lbl-apellido" name="apellido" placeholder="Pérez" class="form__input">
+                  <input type="text" id="lbl-apellido" name="apellido" placeholder="Galvan" class="form__input">
                 </div>
                   
                 <div class="form__container-input">
@@ -73,73 +73,84 @@
                 </div>
                   
                 <div class="form__container-input">
-                  <textarea name="info" cols="30" rows="20" placeholder="Escriba aquí su consulta"></textarea>
+                  <textarea name="info" cols="70" rows="10" placeholder="Escriba aquí su consulta"></textarea>
 
                 </div>
                 
-              </fieldset>
-              
-              <button>Enviar</button>
-              
+              <!-- </fieldset> -->
+              <button class="button">Enviar</button>
               
             </form>
           </div>  <!-- FORM -->
 
 
-          <section class="opinions">Opiniones    <!-- COMIENZA OPINIONES -->
+          <section class="opinions">   <!-- COMIENZA OPINIONES -->
             <div>
               <span class="opinions__span">Comentarios</span>
-              <h2 class="opinions__h2">Clientes dicen...</h2>
+             <!--  <h2 class="opinions__h2">Clientes dicen...</h2> -->
             </div>
             <div class="opinions__box-container">
-              <div class="opinions__box">
+              <div class="opinions__box"> <!-- ! -->
                 <div  class="opinions__box-top">
                   <div class="opinions__profile">
                     <div class="opinions__profile-img">
-                      <img src="#" alt="">
+                      <img src="/public/img/profile-photo/profile-photo-1.webp" alt="" class="opinions__profile-img_img">
                     </div>
-                    <div class="opinions__name.user_strong">
-                      <strong class="opinions__name.user_strong">Juancito Perez</strong>
-                      <span class="opinions__span">@juancitoperez2</span>
+                    <div class="opinions__name-user">
+                      <strong class="opinions__name-user_strong">Juancito Perez</strong>
+                      <span class="opinions__name-user_span">@juancitoperez2</span>
                     </div>
                   </div>
-                  <div class="reviews"></div>
+                  <div class="opinions__reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> <!-- Estrella VACIA -->
+                  </div>
                 </div>
-
-              </div>
-
+                <div class="opinions__comments">
+                  <p class="opinions__comments_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique earum sed laboriosam totam numquam temporibus, rem dignissimos cumque perspiciatis?</p>
+                </div>
+              </div> <!-- ! -->
+              <div class="opinions__box"> <!-- ! -->
+                <div  class="opinions__box-top">
+                  <div class="opinions__profile">
+                    <div class="opinions__profile-img">
+                      <img src="/public/img/profile-photo/profile-photo-3.webp" alt="" class="opinions__profile-img_img">
+                    </div>
+                    <div class="opinions__name-user">
+                      <strong class="opinions__name-user_strong">Ana Laura Ledesma</strong>
+                      <span class="opinions__name-user_span">@ana.ledesma</span>
+                    </div>
+                  </div>
+                  <div class="opinions__reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i> <!-- Estrella VACIA -->
+                  </div>
+                </div>
+                <div class="opinions__comments">
+                  <p class="opinions__comments_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique earum sed laboriosam totam numquam temporibus.</p>
+                </div>
+              </div> <!-- ! -->
+              
             </div>
-
-
-          </section>
-
-
-
-
+          </section> <!-- ! 1er opinion -->
+        </div>
+        <div class="location">
+          <div class="location__icons"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="location__icons"><i class="fa-solid fa-phone"></i></div>
+          <div class="location__icons"><i class="fa-solid fa-envelope"></i></div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="info">
+          <p class="info__p">Av. Libertador 1252<br> CABA</p>
+          <p class="info__p">0800-333-4252 <br> 11-4637-3452</p>
+          <p class="info__p">construnort@gmail.com</p>
+        </div>
 
 
 

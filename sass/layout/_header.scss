@@ -6,12 +6,17 @@
     display: flex;
     flex-direction: column-reverse;
 
-    @media (max-width: 768px) {
+    @media (min-width: 576px) {
         & { /* .main-header */
+            display: flex;
             flex-direction: column-reverse;
         }
     }
 }
+
+
+
+
 
 #menu {
     display: none;
@@ -35,15 +40,17 @@
     background-color: white;
 
     &__nav-list { /* .nav-bar__nav-list */
-        border-top: 1px solid rgb(53, 52, 52);
-        border-bottom: 1px solid rgb(53, 52, 52);
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
+                flex-direction: row;
+                border-top: 1px solid rgb(53, 52, 52);
+                border-bottom: 1px solid rgb(53, 52, 52);
 
-        @media (max-width: 768px) {
+        @media (min-width: 576px) {
             & {
-                flex-direction: column;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                flex-direction: row;
+        
             }
         }
 
@@ -51,10 +58,22 @@
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(53, 52, 52);
+    
+
+        @media (min-width: 576px) {
+            & {
+                text-align: center;
+                background-color: pink;
+                border-bottom: 0px;
+            }
+        }
+
+
     }
 
-    &__nav-link {
+    &__nav-link {                                           
         display: inline-block;
         background-color: white;
         color: rgb(53, 52, 52);
@@ -135,9 +154,37 @@
             background-color: red;
             border-color: red;
         }
+
+        @media (min-width: 576px) {
+        background-color: rgb(53, 52, 52);
+        color: white;
+        border-radius: 5px;
+        margin-left: 0.5rem;
+        padding: 0.2rem;
+    
+        &:hover {
+            background-color: red;
+            border-color: red;
+        }          
+        }
     }
     
     &__carrito-container {
+        flex: 0 0 3rem; /* shorthand (grow shrihk basis */
+        position: relative;
+        left: 5px;
+        display: inline-block;
+        min-height: 30px;
+        width: 30px;
+        background-color: #F42534;
+        color: #ffffff;
+        margin: 7px 10px 10px 5px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+
+
+        @media (min-width: 576px) {
         flex: 0 0 3rem; /* shorthand (grow shrihk basis */
         position: relative;
         right: 80px;
@@ -150,6 +197,7 @@
         text-align: center;
         line-height: 40px;
         border-radius: 50%;
+        }
     }
 }
 
